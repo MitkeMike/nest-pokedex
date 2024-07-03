@@ -1,0 +1,13 @@
+
+version: '3' # specify docker-compose version
+
+services: # services to run
+  db: # name of the first service
+    image: mongo:5 # specify image to build container from
+    restart: always # restart service if it stops
+    ports: # specify port forewarding
+      - 27017:27017 # host:container
+    environment: # environment variables
+      MONGODB_DATABASE: nest-pokemon # name of db
+    volumes: # specify volumes
+      - ./mongo:/data/db # host:container
