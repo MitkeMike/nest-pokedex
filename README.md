@@ -34,6 +34,14 @@ npm run start:dev
 localhost:3000/api/seed
 ```
 
+# Production Build
+1. Crear el archivo ```.env.prod```
+2. Llenar las variables de entorno de produccion
+3. Construir la nueva imagen imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
 
 ## Stack usado
 * MONGO DB
