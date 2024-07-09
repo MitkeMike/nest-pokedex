@@ -7,7 +7,7 @@
 /mongo
 #Variables de Entorno
 .env
-./env.prod
+.env.prod
 
 # Logs
 logs
